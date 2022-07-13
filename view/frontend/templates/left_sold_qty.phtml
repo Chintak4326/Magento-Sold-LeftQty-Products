@@ -1,0 +1,10 @@
+<?php $helper = $this->helper('ChintakExtensions\LeftQty\Helper\Data'); ?>
+<div class="product attribute product_count">
+    <strong>Products Sold:</strong>
+    <?= $helper->getSoldQtyByProductId($this->getProduct()->getId()); ?>
+</div>
+
+<div class="product attribute product_count">
+    <strong>Products Qty Left:</strong>
+    <?= $helper->getStockLeft($this->getProduct()); ?>
+</div>
